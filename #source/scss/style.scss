@@ -1,0 +1,85 @@
+//Добавить шрифт!!!
+
+
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: Calibri;
+    font-weight: 400;
+    color: #080202;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+//intro start
+.intro__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 72px;
+    background: #221E29;
+    padding: 40px 96px 40px 96px;
+    @media (max-width: 750px) {
+        justify-content: center;
+    }
+}
+.intro__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+    min-width: 200px;
+    max-width: 250px;
+    .intro__icon {
+        display: flex;
+        justify-content: center;
+        img {
+        width: 80px;
+        height: 90px;
+        margin: 16px 0px 16px 0px;
+        }
+    }
+    h2 {
+        color: #D8EFE3;
+        font-size: 20px;
+        font-family: Calibri;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 8px;
+    }
+    p {
+        color: #D8EFE3;
+        font-size: 16px;
+        font-family: Calibri;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+//intro end
